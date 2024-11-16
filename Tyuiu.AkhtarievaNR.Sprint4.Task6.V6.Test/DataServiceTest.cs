@@ -12,6 +12,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint4.Task6.V6.Test
             var name = new string[] { "Борис", "Анна", "Михаил", "Ирина", "Сергей", "Татьяна", "Олег" };
             string[] res = ds.Calculate(name);
             string[] wait = { "Борис", "Ирина" };
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
